@@ -111,6 +111,10 @@ form h3 {
   letter-spacing: 2px;
 }
 
+.test {
+  display: flex;
+}
+
 .for-number h3,
 .for-date h3,
 .for-cvc h3 {
