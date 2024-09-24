@@ -39,8 +39,10 @@
                 name="name"
                 type="text"
                 placeholder="e.g. Jane Appleseed"
+                required
               />
             </label>
+            <p id="name-blank-error">Can’t be blank</p>
           </div>
           <div class="for-number">
             <h3>CARD NUMBER</h3>
@@ -48,20 +50,25 @@
               <input
                 id="card-number"
                 name="card-number"
-                type="number"
+                type="text"
                 placeholder="e.g. 1234 5678 9123 0000"
+                required
               />
             </label>
+            <p id="card-number-blank-error">Can’t be blank</p>
+            <p id="card-number-error">Wrong format, numbers only</p>
           </div>
-          <div class="testt">
+          <div class="test">
             <div class="for-date">
               <h3>EXP. DATE (MM/YY)</h3>
               <label for="exp-date">
                 <input
                   id="exp-date"
                   name="exp-date"
+                  class="first"
                   type="number"
                   placeholder="MM"
+                  required
                 />
                 <input
                   id="exp-date"
@@ -69,7 +76,9 @@
                   class="second"
                   type="number"
                   placeholder="YY"
+                  required
                 />
+                <p id="date-blank-error">Can’t be blank</p>
               </label>
             </div>
             <div class="for-cvc">
@@ -80,12 +89,20 @@
                   name="cvc"
                   type="number"
                   placeholder="e.g. 123"
+                  required
                 />
+                <p id="cvc-blank-error">Can’t be blank</p>
               </label>
             </div>
           </div>
-          <button><p>Confirm</p></button>
+          <button id="confirm"><p>Confirm</p></button>
         </form>
+      </div>
+      <div class="success">
+        <img src="./images/icon-complete.svg" alt="Icon" id="success-picture" />
+        <h4>THANK YOU!</h4>
+        <p>We’ve added your card details</p>
+        <button id="continue"><p>Continue</p></button>
       </div>
     </main>
     <script src="app.js"></script>

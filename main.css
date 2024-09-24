@@ -121,10 +121,26 @@ form input {
   margin-top: 9px;
   width: 327px;
   height: 45px;
-  border: solid 1px #dfdee0;
+  border: solid 1px#dfdee0;
   border-radius: 8px;
   background-color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  color: #21092f;
+  text-indent: 12px;
+  font-family: "Space Grotesk", sans-serif !important;
+  /* background-image: linear-gradient(white, white),
+    linear-gradient(112deg, #6348fe -27%, #610595 5%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box; */
 }
+
+/* form input:focus {
+  outline: none;
+  border-color: transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(112deg, #6348fe -27%, #610595 5%);
+} */
 
 .for-date input {
   width: 72px;
@@ -153,7 +169,19 @@ form input::placeholder {
   display: inline-block;
 }
 
-form button {
+#name-blank-error,
+#card-number-error,
+#card-number-blank-error,
+#date-blank-error,
+#cvc-blank-error {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ff5050;
+  margin-top: 8px;
+  display: none;
+}
+
+#confirm {
   width: 327px;
   height: 53px;
   background-color: #21092f;
@@ -162,11 +190,66 @@ form button {
   margin-top: 28px;
 }
 
-form button p {
+/* .second {
+  margin-bottom: 28px;
+} */
+
+#confirm p {
   font-size: 18px;
   font-weight: 500;
   color: #fff;
   font-family: "Space Grotesk", sans-serif !important;
+}
+
+.success {
+  margin-top: 91px;
+  padding-bottom: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#success-picture {
+  width: 80px;
+  height: 80px;
+}
+
+.success h4 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #21092f;
+  letter-spacing: 3.42px;
+  margin-top: 35px;
+}
+
+.success p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #8f8694;
+  margin-top: 16px;
+}
+
+#continue {
+  width: 327px;
+  height: 53px;
+  background-color: #21092f;
+  border-radius: 8px;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#continue p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+
+.success {
+  display: none;
 }
 
 @media (min-width: 1440px) {
@@ -180,7 +263,6 @@ form button p {
     background: url(./images/bg-main-desktop.png);
     background-size: cover;
     width: 483px;
-    height: 100vh;
     display: block;
   }
 
@@ -220,6 +302,7 @@ form button p {
     letter-spacing: 3.42px;
     margin-left: 195px;
     margin-top: -140px;
+    width: 100%;
   }
 
   .name-example {
@@ -260,9 +343,28 @@ form button p {
     margin-left: 20px;
   }
 
-  form button {
+  #confirm {
     width: 381px;
     border-radius: 8px;
     margin-top: 40px;
+  }
+
+  #continue {
+    width: 381px;
+  }
+
+  .success {
+    display: flex;
+    flex: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 305px 0 304px 0;
+    display: none;
+  }
+
+  .user-container {
+    display: block;
   }
 }
