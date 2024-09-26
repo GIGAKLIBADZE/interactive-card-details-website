@@ -133,18 +133,11 @@ form input {
   color: #21092f;
   text-indent: 12px;
   font-family: "Space Grotesk", sans-serif !important;
-  /* background-image: linear-gradient(white, white),
-    linear-gradient(112deg, #6348fe -27%, #610595 5%);
-  background-origin: border-box;
-  background-clip: padding-box, border-box; */
 }
 
-/* form input:focus {
-  outline: none;
-  border-color: transparent;
-  background-image: linear-gradient(white, white),
-    linear-gradient(112deg, #6348fe -27%, #610595 5%);
-} */
+form input {
+  cursor: pointer;
+}
 
 .for-date input {
   width: 72px;
@@ -243,6 +236,7 @@ form input::placeholder {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 }
 
 #continue p {
@@ -351,6 +345,7 @@ form input::placeholder {
     width: 381px;
     border-radius: 8px;
     margin-top: 40px;
+    cursor: pointer;
   }
 
   #continue {
